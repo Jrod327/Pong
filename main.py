@@ -25,8 +25,8 @@ screen.onkey(paddle_left.move_down, "s")
 screen.onkey(paddle_right.move_up, "Up")
 screen.onkey(paddle_right.move_down, "Down")
 
-game_is_on = True
-while game_is_on:
+flag = True
+while flag:
     time.sleep(ball.move_speed)
     screen.update()
     ball.move()
